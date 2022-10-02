@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Feedback Sent</title>
+<link rel="shortcut icon" href="/img/LogoMightyducks-02.png" type="image/x-icon">
+<link rel="stylesheet" href="style1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>MIGHTY DUCKS HOCKEY LEAGUE</h1>
+    <img id="logo" src="./img/LogoMightyducks-02.png" alt="logo">
+    <div class="headlogo"></div>
+  </header>
+
+  <nav>
+
+    <div class="titulo">INFORMATION HAS BEEN SENT</div>
+
+    <a href="index.html">home</a>
+    <a href="game_info.html">game information</a>
+    <a href="rules.html">rules</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+    <a href="registration.html">registration</a>
+    
+  </nav>
+
+
+<p align=center>&nbsp;</p>
+<h1 align=center><font size="+1">The following information has been sent as your
+  feedback:</font></h1>
+
+<table border="1" align=center width="226">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</body>
+</html>
+

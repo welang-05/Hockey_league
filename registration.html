@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="shortcut icon" href="./img/LogoMightyducks-02.png" type="image/x-icon">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>MIGHTY DUCKS HOCKEY LEAGUE</h1>
+        <img id="logo" src="./img/LogoMightyducks-02.png" alt="logo">
+        <div class="headlogo"></div>
+    </header>
+    
+    <nav>
+
+        <div class="titulo">REGISTRATION FORM</div>
+
+        <a href="index.html">home</a>
+        <a href="game_info.html">game information</a>
+        <a href="rules.html">rules</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <a href="registration.html">registration</a>
+
+        
+    </nav>
+
+    <section class="cuerpo">
+
+        <div class="texto">
+            <form action="show_data.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <table class="formulario">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="fname">Player's First Name:</label>
+                                    <input type="text" name="Name" id="fname" placeholder="Cosme">
+                                </td>
+                                <td>
+                                    <label for="lname">Last Name:</label>
+                                    <input type="text" name="Last Name" id="lname" placeholder="Fulanito">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="adress">Street Adress:</label>
+                                    <input type="text" name="Street Adress" id="adress" placeholder="Enter here your direction">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="city">City:</label>
+                                    <input type="text" name="City" id="city" placeholder="Enter the city where you live here">
+                                </td>
+                                <td>
+                                    <label for="zip">Zip code:</label>
+                                    <input type="text" name="zip code" id="zip" placeholder="Enter your zip code here">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="birth">Birthdate:</label>
+                                    <input type="date" name="Birthdate" id="birth">
+                                </td>
+                                <td>
+                                    <label>Gender: </label>
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="Gender" id="female" value="female">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="Gender" id="male" value="male">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Grade:</label>
+                                    <label for="preschool">Pre-School</label>
+                                    <input type="radio" name="Grade" id="preschool" value="preschool">
+                                    <label for="1st">1st</label>
+                                    <input type="radio" name="Grade" id="1st" value="1st">
+                                    <label for="2nd">2nd</label>
+                                    <input type="radio" name="Grade" id="2nd" value="2nd">
+                                    <label for="3rd">3rd</label>
+                                    <input type="radio" name="Grade" id="3rd" value="3rd">
+                                    <label for="4th">4th</label>
+                                    <input type="radio" name="Grade" id="4th" value="4th">
+                                    <label for="5th">5th</label>
+                                    <input type="radio" name="Grade" id="5th" value="5th">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Aditional Information</legend>
+                    <table class="formulario">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="school" class="question">Which elementary school do you live near? (Closest School)</label>
+                                </td>
+                                <td><select name="school" id="school">
+                                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="Greenbay">Greenbay</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="South Elementary">South Elementary</option>
+                                </select></td>
+                            </tr>                
+                            <tr>
+                                <td colspan="2" class="question">What position(s) do you normally play? (check all that apply)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fw">Forward</label>
+                                    <input type="checkbox" name="position" id="fw" value="Forward">
+                                </td>
+                                <td>
+                                    <label for="mf">Midfield</label>
+                                    <input type="checkbox" name="position" id="mf" value="Midfield">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="df">Defense</label>
+                                    <input type="checkbox" name="position" id="df" value="Defense">
+                                </td>
+                                <td>
+                                    <label for="gk">Goalkeeper</label>
+                                    <input type="checkbox" name="position" id="gk" value="Goalkeeper">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="question">Uniform Size:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ys">Youth Small</label>
+                                    <input type="radio" name="uniform" id="ys" value="Youth Small">
+                                </td>
+                                <td>
+                                    <label for="med">Medium</label>
+                                    <input type="radio" name="uniform" id="med" value="Medium">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ym">Youth Medium</label>
+                                    <input type="radio" name="uniform" id="ym" value="Youth Medium">
+                                </td>
+                                <td>
+                                    <label for="L">Large</label>
+                                    <input type="radio" name="uniform" id="L" value="Large">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="yl">Youth Large</label>
+                                    <input type="radio" name="uniform" id="yl" value="Youth Large">
+                                </td>
+                                <td>
+                                    <label for="exl">Extra Large</label>
+                                    <input type="radio" name="uniform" id="exl" value="Extra Large">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="s">Small</label>
+                                    <input type="radio" name="uniform" id="s" value="Small">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Permision to Play</legend>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program/orbeing transported to or from MHDL sponsored activities, which transportation.</p>
+                    <p>By signing below, I hereby agree and authorize the above. In addition, by entering your name below, also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <table class="formulario">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="signature">Parent/Guardian Signature: </label>
+                                    <input type="text" name="parent" id="signature">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="date">Date: </label>
+                                    <input type="date" name="date" id="date">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+        <div id="img_cuerpo5"></div>
+
+    </section>
+    
+    <footer>
+        <div id="iniciofoot">
+            <div id="credits">MIGHTY DUCKS HOCKEY LEAGUE 2022</div>
+            <div id="socialmedia">
+                <div>Follow us in social media</div>
+                <div id="linksmedia">
+                    <a href="http://facebook.com" target="blank_"><img src="/img/036-facebook.png" alt="facebook"></a>
+                    <a href="http://instagram.com" target="blank_"><img src="/img/029-instagram.png" alt="instagram"></a>
+                    <a href="http://youtube.com" target="blank_"><img src="/img/001-youtube.png" alt="youtube"></a>
+                </div>
+                </div>
+        </div>
+        <div id="finfoot">© 2022 Francisco Mora.</div>
+    </footer>
+
+</body>
+
+</html>
